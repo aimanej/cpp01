@@ -6,13 +6,16 @@ void zombie::announce()
 }
 
 
-zombie *zombie::newZombie(std::string name)
+zombie *newZombie(std::string name)
 {
-    
-}
+    zombie *cl = new zombie;
+    cl->namer(name);
+    return cl;
+};
 
-void zombie::randomChum(std::string name)
+void randomChum(std::string name)
 {
-    zombie newo(name);
+    zombie newo;
+    newo.namer(name);
     newo.announce();
 }
