@@ -1,9 +1,10 @@
-#include "weapon.hpp"
+// #include "weapon.hpp"
+#include "humanB.hpp"
 
-
-void humanB::setWeapon(weapon club)
+void humanB::setWeapon(weapon& club)
 {
-    arm = new weapon(club.getType());
+    arm = &club;
+    // arm = new weapon(club.getType());
     // arm = &club;
     // std::cout << "we here : " << arm->getType();
 }

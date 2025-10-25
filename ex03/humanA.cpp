@@ -1,4 +1,5 @@
-#include "weapon.hpp"
+#include "humanA.hpp"
+// #include "weapon.hpp"
 
 void humanA::attack()
 {

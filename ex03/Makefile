@@ -11,7 +11,7 @@ Name = fight
 all:$(Name)
 
 $(Name): $(Srcs_humans) $(Srcs_weapon) $(Header)
-	c++ $(Srcs_main) $(Srcs_weapon) $(Srcs_humans) -o $(Name)
+	g++ $(Srcs_main) $(Srcs_weapon) $(Srcs_humans) -o $(Name)
 
 clean:
 	rm -rf $(Name)
