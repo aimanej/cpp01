@@ -1,15 +1,13 @@
-Srcs = Zombie_horde.cpp Zombie.cpp main.cpp
+Srcs = main.cpp
 
-Header = Zombie.hpp
+Name = Brain
 
 Flags = c++ -Wall -Wextra -Werror -std=c++98
 
-Name = Horde
-
 all:$(Name)
 
-$(Name): $(Srcs) $(Header)
-	$(Flags) $(Srcs) -o $(Name)
+$(Name):$(Srcs)
+	$(Flags) $(Srcs) -o$(Name)
 
 clean:
 	rm -rf $(Name)

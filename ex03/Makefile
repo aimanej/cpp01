@@ -1,17 +1,13 @@
-Srcs_main = main.cpp
+Srcs = main.cpp weapon.cpp humanA.cpp humanB.cpp
 
-Srcs_humans = humanA.cpp humanB.cpp
-
-Srcs_weapon = weapon.cpp
-
-Header = weapon.hpp
+Headers = weapon.hpp humanA.hpp humanB.hpp
 
 Name = fight
 
 all:$(Name)
 
-$(Name): $(Srcs_humans) $(Srcs_weapon) $(Header)
-	g++ $(Srcs_main) $(Srcs_weapon) $(Srcs_humans) -o $(Name)
+$(Name): $(Srcs) $(Header)
+	g++ $(Srcs) -o $(Name)
 
 clean:
 	rm -rf $(Name)

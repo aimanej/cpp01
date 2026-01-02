@@ -1,7 +1,6 @@
 #include "humanA.hpp"
-// #include "weapon.hpp"
 
-void humanA::attack()
+void HumanA::attack()
 {
-    std::cout << name << " attacked with their" << arm.getType() << "\n";
+    std::cout << _name << " attacked with their " << _arm.getType() << std::endl;
 }

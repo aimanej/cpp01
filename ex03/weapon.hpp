@@ -4,15 +4,15 @@
 #include <iostream>
 
 
-class weapon
+class Weapon
 {
 private:
-    std::string type;
+    std::string _type;
 
 public:
-    std::string &getType();
+    std::string const &getType();
     void setType(std::string newtype);
-    weapon(std::string arm);
+    Weapon(std::string arm);
 };
 
 

@@ -3,18 +3,18 @@
 
 #include "weapon.hpp"
 
-class weapon;
+class Weapon;
 
-class humanB
+class HumanB
 {
 private:
-    std::string name;
-    weapon *arm;
+    std::string _name;
+    Weapon* _arm;
 
 public:
     void attack();
-    humanB(std::string str) : name(str){}
-    void setWeapon(weapon& club);
+    HumanB(std::string str);
+    void setWeapon(Weapon& club);
 };
 
 #endif

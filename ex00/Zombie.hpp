@@ -3,27 +3,17 @@
 
 #include <iostream>
 
-class zombie
+class Zombie
 {
 private:
     std::string name;
 
 public:
     void announce(void);
-    // zombie(std::string name)
-    // {
-    //     zombie::name = name;
-    // }
-    void namer(std::string name)
-    {
-        zombie::name = name;
-    }
-    ~zombie()
-    {
-        std::cout << name << " was purified\n";
-    };
+    void namer(std::string name);
+    ~Zombie();
 };
 void randomChum(std::string name);
-zombie *newZombie(std::string name);
+Zombie *newZombie(std::string name);
 
 #endif

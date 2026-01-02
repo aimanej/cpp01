@@ -1,15 +1,17 @@
 // #include "weapon.hpp"
 #include "humanB.hpp"
 
-void humanB::setWeapon(weapon& club)
+HumanB::HumanB(std::string str)
 {
-    arm = &club;
-    // arm = new weapon(club.getType());
-    // arm = &club;
-    // std::cout << "we here : " << arm->getType();
+    _name = str;
 }
 
-void humanB::attack()
+void HumanB::setWeapon(Weapon& club)
 {
-    std::cout << name << " attacked with their" << (*arm).getType() << "\n";
+    _arm = &club;
+}
+
+void HumanB::attack()
+{
+    std::cout << _name << " attacked with their " << (*_arm).getType() << std::endl;
 }
